@@ -1,0 +1,72 @@
+body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        /* Navbar styles */
+.navbar {
+    background: linear-gradient(45deg, #3498db, #e74c3c); /* Use your preferred gradient colors */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+        .navbar a {
+            font-size: 18px;
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 20px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #3498db;
+        }
+
+        /* Logo styles */
+        .navbar .logo {
+            font-size: 24px;
+            color: #e74c3c;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        /* Mobile navigation icon */
+        .navbar .icon {
+            display: none;
+            font-size: 24px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        /* Align services to the left */
+        .navbar .services {
+            flex: 1;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        /* Create a dropdown when the screen is less than 600px wide */
+        @media screen and (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px;
+            }
+            .navbar .services {
+                display: none;
+            }
+            .navbar .icon {
+                display: block;
+            }
+        }
